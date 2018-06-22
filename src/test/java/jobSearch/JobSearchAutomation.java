@@ -108,7 +108,9 @@ public class JobSearchAutomation {
 		System.out.println("test completed at " + LocalDateTime.now());
 		Thread.sleep(3000);
 		driver.close();
-		System.out.println(keywords);
+		for(String each:keywords) {
+		System.out.println(each);
+		}
 
 	}
 }
